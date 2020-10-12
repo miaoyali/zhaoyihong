@@ -39,4 +39,9 @@ public class Acontroller {
         }
         aaService.batchInsertStudent(l);
     }
+
+    @RequestMapping(value = "/daoshuju", method = RequestMethod.GET)
+    private void daoshuju(){
+        aaService.daoShuJu();
+    }
 }

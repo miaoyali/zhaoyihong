@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao2.BbMapper">
+    <resultMap id="dd" type="com.example.demo.dao2.entity.AEntity">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="password" column="password"></result>
+
+    </resultMap>
+
+    <insert id="insertOne" parameterType="com.example.demo.dao2.entity.AEntity">
+        INSERT INTO t_user (username,password)
+        VALUES(#{username},#{password});
+    </insert>
+</mapper>

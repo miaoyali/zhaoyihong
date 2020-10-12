@@ -7,4 +7,5 @@ import java.util.List;
 public interface AaService {
     AEntity findOne(String name);
     void batchInsertStudent(List<AEntity> item);
+    void daoShuJu();
 }

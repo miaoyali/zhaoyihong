@@ -2,11 +2,17 @@ server:
   port: 8080
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/myw?serverTimezone=UTC
-    username: root
-    password:
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
+    test1:
+     driver-class-name: com.mysql.jdbc.Driver
+     jdbc-url: jdbc:mysql://localhost:3306/myw?serverTimezone=UTC
+     username: root
+     password:
+    test2:
+     driver-class-name: com.mysql.jdbc.Driver
+     jdbc-url: jdbc:mysql://localhost:3306/myl?serverTimezone=UTC
+     username: root
+     password:
+#mybatis:
+  #mapper-locations: classpath:mapper/*.xml
   #config-location: classpath:config/config.xml
-  type-aliases-package: com.example.demo.dao.entity
+  #type-aliases-package: com.example.demo.dao.entity
